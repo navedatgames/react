@@ -1,19 +1,13 @@
-//this is jsx
-let nav = (
-    <nav>
-        <h1>Websites</h1>
-        <ul>
-            <li>Goods</li>
-            <li>Services</li>
-            <li>Packags</li>
-            <li>something</li>
-        </ul>
-    </nav>
-)
-let Navbar = () =>{
-    return (
-     nav
-    );
-  }
-
-  export default Navbar;
+import "./style.css"
+let Navbar = ()=>{
+    return(
+        <nav >
+            <img src = "logo512.png" width = "100px"></img>
+            
+            <h3>ReactFacts</h3>
+            <h4 >React Course Project-1</h4>
+           
+        </nav>
+    )
+}
+export default Navbar
