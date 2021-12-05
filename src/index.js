@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './App';
+import TicTac from './tictac';
  
 
 ReactDOM.render(
-    <App />,document.getElementById('root')
+    < TicTac/>,document.getElementById('root')
 );
 
 
