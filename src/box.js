@@ -1,11 +1,23 @@
 import "./style1.css"
+import React from "react"
+let check = true
 let Box = (props)=>{
-    function handleClick(){
-        console.log(props.value +"has been clicked")
+    const [value, setValue]  = React.useState("")
+   
+    function func(){
+        if(check){
+            setValue("X")
+            check = false
+        }
+        else{
+            setValue("O")
+            check = true
+        }
     }
+    
     return(
-        <div onClick = {handleClick} className = "container" >
-              {props.value}
+        <div onClick = {func} className = "container" >
+              {value}
         </div>
     )
 }
