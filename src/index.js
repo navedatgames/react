@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import TicTac from './tictac';
+import {createStore} from "redux"
+import {Provider} from "react-redux"
+import App from './App';
+import reducer from './redux/reducer';
  
 
+const myStore =  createStore(reducer)
 ReactDOM.render(
-    < TicTac/>,document.getElementById('root')
+    <Provider store = {myStore}>
+        < App/>
+    </Provider>
+,document.getElementById('root')
 );
 
 
